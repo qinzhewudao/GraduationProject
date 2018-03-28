@@ -1,3 +1,4 @@
+group 'com.sy.GraduationProject'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
