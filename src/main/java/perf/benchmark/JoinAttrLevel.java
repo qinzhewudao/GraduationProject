@@ -19,7 +19,7 @@ import java.util.*;
 import java.util.BitSet;
 
 /**
- * Created by ylu on 1/21/16.
+ *
  */
 
 public class JoinAttrLevel {
@@ -35,7 +35,7 @@ public class JoinAttrLevel {
 
     public static ParsedTupleList loadSample(String tableName) {
 
-        ConfUtils cfg = new ConfUtils("/Users/ylu/Documents/workspace/AdaptDB/conf/local.properties");
+        ConfUtils cfg = new ConfUtils("/Users/ylu/Documents/workspace/AdaptDB/conf/local.properties.txt");
         FileSystem fs = HDFSUtils.getFSByHadoopHome(cfg.getHADOOP_HOME());
         // Load table info.
         Globals.loadTableInfo(tableName, cfg.getHDFS_WORKING_DIR(), fs);

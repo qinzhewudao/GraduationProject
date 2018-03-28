@@ -182,5 +182,6 @@
     <orderEntry type="library" name="Gradle: org.glassfish.external:management-api:3.0.0-b012" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
     <orderEntry type="library" name="Gradle: com.jamesmurty.utils:java-xmlbuilder:0.4" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.12.4" level="project" />
   </component>
 </module>

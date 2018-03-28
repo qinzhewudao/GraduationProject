@@ -45,7 +45,7 @@ public class CMT {
 
     public static ParsedTupleList loadSample(String tableName) {
 
-        ConfUtils cfg = new ConfUtils("/home/mdindex/yilu/mdindex/conf/cmt.properties");
+        ConfUtils cfg = new ConfUtils("D:/hadoop/yilu/mdindex/conf/cmt.properties.txt");
         FileSystem fs = HDFSUtils.getFSByHadoopHome(cfg.getHADOOP_HOME());
         // Load table info.
         Globals.loadTableInfo(tableName, cfg.getHDFS_WORKING_DIR(), fs);
@@ -131,7 +131,7 @@ public class CMT {
         predicatesMH = new HashMap();
         predicatesSF = new HashMap();
 
-        byte[] stringBytes = HDFSUtils.readFile(HDFSUtils.getFSByHadoopHome("/home/mdindex/hadoop-2.6.0"), "/user/yilu/cmt_queries.log");
+        byte[] stringBytes = HDFSUtils.readFile(HDFSUtils.getFSByHadoopHome("D:/hadoop/hadoop-2.6.0"), "/user/yilu/cmt_queries.log");
 
         String queriesString = new String(stringBytes);
         String[] queries = queriesString.split("\n");
@@ -204,7 +204,7 @@ public class CMT {
 
 
         Configuration conf = new Configuration();
-        String coreSitePath = "/home/mdindex/hadoop-2.6.0/etc/hadoop/core-site.xml";
+        String coreSitePath = "D:/hadoop/hadoop-2.6.0/etc/hadoop/core-site.xml";
         conf.addResource(new Path(coreSitePath));
         Path path = new Path(outpath);
         try {

@@ -33,9 +33,9 @@ public class Amoeba {
     public static String part = "part";
     public static String supplier = "supplier";
 
-    public static int lineitemBuckets = 16384, ordersBuckets = 2048, customerBuckets = 512, partBuckets = 512, supplierBuckets = 32;
+    private static int lineitemBuckets = 16384, ordersBuckets = 2048, customerBuckets = 512, partBuckets = 512, supplierBuckets = 32;
 
-    public static ParsedTupleList lineitemSample, ordersSample, customerSample, partSample, supplierSample;
+    private static ParsedTupleList lineitemSample, ordersSample, customerSample, partSample, supplierSample;
 
     private static String[] mktSegmentVals = new
             String[]{"AUTOMOBILE", "BUILDING", "FURNITURE", "HOUSEHOLD", "MACHINERY"};
@@ -49,7 +49,7 @@ public class Amoeba {
 
     public static ParsedTupleList loadSample(String tableName) {
 
-        ConfUtils cfg = new ConfUtils("/home/mdindex/yilu/mdindex/conf/tpch.properties");
+        ConfUtils cfg = new ConfUtils("D:/lastwork/GraduationProject/conf/tpch.properties");
         FileSystem fs = HDFSUtils.getFSByHadoopHome(cfg.getHADOOP_HOME());
         // Load table info.
         Globals.loadTableInfo(tableName, cfg.getHDFS_WORKING_DIR(), fs);
@@ -405,7 +405,7 @@ public class Amoeba {
 
 
         Configuration conf = new Configuration();
-        String coreSitePath = "/home/mdindex/hadoop-2.6.0/etc/hadoop/core-site.xml";
+        String coreSitePath = "D:/hadoop/hadoop-2.6.0/etc/hadoop/core-site.xml";
         conf.addResource(new Path(coreSitePath));
         Path path = new Path(outpath);
         try {
