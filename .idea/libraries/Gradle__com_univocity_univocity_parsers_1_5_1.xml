@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.univocity:univocity-parsers:1.5.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.univocity/univocity-parsers/1.5.1/b82044cc9607a0811a2cd066640dc184c77eb367/univocity-parsers-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.univocity/univocity-parsers/1.5.1/a847518b2610cf08f759c5581e8afc59f1c0ce1e/univocity-parsers-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
